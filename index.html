@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="js/main.js" type="module"></script>
+    <link rel="shortcut icon" href="imgs/icons8-github-100.png" type="image/x-icon">
+    <title>Get GitHub Users</title>
+</head>
+<body>
+    <header>
+        <h1>Busque qualquer perfil no GitHub!</h1>
+        <section id="inputs">
+            <input type="text" id="inputUserName" placeholder="Nome De Usuário..">
+            <input type="button" id="submitButton" value='🔎' onclick="getGitHubUsers()">
+        </section>
+    </header>
+    <main>
+        <h2 id="userName"></h2>
+        <section>
+            <img id="profilePicture">
+            <p id="userInformations">
+                <span id="userBio"></span>
+                <br>
+                <span id="repositories"></span>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
